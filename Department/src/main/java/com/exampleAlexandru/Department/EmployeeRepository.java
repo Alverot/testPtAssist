@@ -1,6 +1,9 @@
 package com.exampleAlexandru.Department;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface EmployeeRepository extends MongoRepository<Employee, String> {
+@Repository
+public interface EmployeeRepository extends MongoRepository<Employee, ObjectId> {
 }

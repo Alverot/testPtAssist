@@ -17,4 +17,9 @@ public class Employee {
     @Id
     private ObjectId id;
     private String Text;
+
+    public Employee(String text) {
+        Text = text;
+
+    }
 }
