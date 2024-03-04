@@ -6,7 +6,7 @@ const UserForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('/api/axiosConfig', {name});
+            await axios.post('/api/employee', name);
             alert('Utilizator adăugat cu succes!');
             setName('');
         } catch (error) {
