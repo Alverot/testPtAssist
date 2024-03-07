@@ -9,8 +9,8 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    public Employee createEmployee(String teext){
-        Employee employee = new Employee(teext);
+    public Employee createEmployee(String text){
+        Employee employee = new Employee(text);
 
         employeeRepository.insert(employee);
 
